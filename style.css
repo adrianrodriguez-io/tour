@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header {
+    background-image: url('grand-place-background.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+}
+
+.cityname {
+    color: white;
+    font-size: 75px;
+    position: relative;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.info-section, .book-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.info-section .container, .book-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-img {
+    width: 75px;
+    width: 75px;
+    border-radius: 8px;
+}
+
+.reviews-section {
+    background-color: #f7f7f7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.cta {
+    background-color: #ff7e00;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+.cta2 {
+    background-color: #ff7e00;
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+@media screen and (max-width: 768px) {
+    .info-section, .book-section {
+        flex-direction: column;
+    }
+}
+
+
+.seo-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.seo-section .container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.seo-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.seo-section p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#tour-itinerary {
+    background-color: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.itinerary-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+.itinerary-item {
+    margin-bottom: 30px;
+}
+
+.itinerary-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.itinerary-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.itinerary-item span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+}
+
+@media screen and (min-width: 768px) {
+    .itinerary-container {
+        text-align: left;
+    }
+}
+
+
+#how-it-works {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#how-it-works .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.step img {
+    width: 100px;
+    margin: auto;
+    display: block;
+}
+
+.step h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.step p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+#reviews {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column; /* This already ensures vertical stacking */
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Ensures the container uses full width */
+}
+
+.review-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 90%; /* Adjusted for better responsiveness */
+    max-width: 600px; /* Keeps the items from becoming too wide on larger screens */
+    text-align: left;
+    margin: auto; /* Centers the review items in the container */
+}
+
+.rating {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.star {
+    margin-right: 5px;
+}
+
+.review-title{
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.reviewer-info {
+    font-style: italic;
+    font-size: 14px;
+    color: #777;
+}
+
+
+#other-tours {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#other-tours .container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.tour-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tour-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tour-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.tour-item h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.tour-item p {
+    color: #666;
+    font-size: 14px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    .tour-items {
+        grid-template-columns: 1fr; /* Stack items vertically on smaller screens */
+    }
+}
+
+
+.tour-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the space between images */
+    margin-bottom: 20px; /* Space between the images and the first paragraph */
+}
+
+.tour-photo {
+    max-width: 200px; /* Ensures images are responsive and fit within their container */
+    height: 200px; /* Maintains aspect ratio */
+    border-radius: 8px; /* Optional: Adds rounded corners to your images */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+}
