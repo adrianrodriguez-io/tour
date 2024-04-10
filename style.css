@@ -17,14 +17,24 @@ header {
     color: white;
     padding: 100px 0;
     position: relative;
+    
 }
+
 
 .cityname {
     color: white;
-    font-size: 75px;
-    position: relative;
-    margin-bottom: 0px;
+    font-size: 90px;
+    /*position: relative;*/
+    margin-bottom: -20px;
     text-align: center;
+}
+
+.cityname {
+    position: absolute;
+    bottom: 0; /* Aligns .cityname to the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Precisely center .cityname */
+    /* Additional styling */
 }
 
 .header-content {
