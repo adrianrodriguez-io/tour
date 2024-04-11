@@ -333,3 +333,20 @@ footer {
     border-radius: 8px; /* Optional: Adds rounded corners to your images */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
 }
+
+.read-more-btn {
+    display: inline-block;
+    background-color: #007bff; /* Blue, for example, adjust as needed */
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline from the link */
+    font-weight: bold;
+}
+
+.read-more-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    color: #fff;
+    transition: background-color 0.3s;
+}
