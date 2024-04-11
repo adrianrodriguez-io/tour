@@ -10,16 +10,6 @@ body, html {
     overflow-x: hidden;
 }
 
-header {
-    background-image: url('images/grand-place-background.webp');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    position: relative;
-    
-}
-
 
 .cityname {
     color: white;
