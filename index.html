@@ -203,32 +203,35 @@
     </section>
     
     <section id="book" class="book-section">
-        <h2>Book A Tour</h2>
-        <p>Ready to explore Brussels? Book your free tour today and get ready for an unforgettable adventure.</p>
-        <!-- Booking form or link -->
-        <div class="">
-            <!-- Contenido Noscript para SEO adicional -->
-            <noscript><a href="https://www.eventbrite.com/e/test-tickets-897910282827" rel="noopener noreferrer" target="_blank" >Comprar entradas en Eventbrite</a></noscript>
-            <!-- Puedes personalizar este botón como quieras -->
-            <button id="eventbrite-widget-modal-trigger-897910282827" type="button" class="cta">Book Now!</button>
+        <div class="container"> 
+            <h2>Book A Tour</h2>
+            <div class="book-a-tour-container">
+                <p>Ready to explore Brussels? Book your free tour today and get ready for an unforgettable adventure.</p>
+                <!-- Booking form or link -->
+                <div class="">
+                    <!-- Contenido Noscript para SEO adicional -->
+                    <noscript><a href="https://www.eventbrite.com/e/test-tickets-897910282827" rel="noopener noreferrer" target="_blank" >Comprar entradas en Eventbrite</a></noscript>
+                    <!-- Puedes personalizar este botón como quieras -->
+                    <button id="eventbrite-widget-modal-trigger-897910282827" type="button" class="cta">Book Now!</button>
 
-            <script src="https://www.eventbrite.es/static/widgets/eb_widgets.js"></script>
+                    <script src="https://www.eventbrite.es/static/widgets/eb_widgets.js"></script>
 
-            <script type="text/javascript">
-                var exampleCallback = function() {
-                    console.log('Pedido completo');
-                };
+                    <script type="text/javascript">
+                        var exampleCallback = function() {
+                            console.log('Pedido completo');
+                        };
 
-                window.EBWidgets.createWidget({
-                    widgetType: 'checkout',
-                    eventId: '897910282827',
-                    modal: true,
-                    modalTriggerElementId: 'eventbrite-widget-modal-trigger-897910282827',
-                    onOrderComplete: exampleCallback
-                });
-            </script>
+                        window.EBWidgets.createWidget({
+                            widgetType: 'checkout',
+                            eventId: '897910282827',
+                            modal: true,
+                            modalTriggerElementId: 'eventbrite-widget-modal-trigger-897910282827',
+                            onOrderComplete: exampleCallback
+                        });
+                    </script>
+                </div>
+            </div>
         </div>
-
     </section>
 
 

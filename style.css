@@ -43,6 +43,7 @@ body, html {
     justify-content: center;
     padding: 50px 20px;
     gap: 20px;
+    text-align: center;
 }
 
 .info-section .container, .book-section {
@@ -71,6 +72,29 @@ body, html {
     padding-top: 20px;
 }
 
+
+.book-section {
+        background-color: #fff;
+        padding: 50px 20px;
+    }
+    
+    .book-section .container {
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .book-section h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .book-section p {
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+    
 .cta {
     background-color: #ff7e00;
     color: white;
@@ -350,3 +374,4 @@ footer {
     color: #fff;
     transition: background-color 0.3s;
 }
+
